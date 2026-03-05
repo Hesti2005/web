@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Kontak</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+            color: #333;
+        }
+
+        /* Sidebar */
+        .sidebar-tugas {
+            background-color: #8d8673;
+            width: 250px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+        }
+
+        .sidebar-tugas::after {
+            content: "";
+            position: absolute;
+            right: -30px;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid #8d8673;
+        }
+
+        /* Konten utama */
+        .content {
+            padding: 40px;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+            color: #8d8673;
+        }
+
+        /* Form */
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 450px;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: border 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #8d8673;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Checkbox */
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Tombol */
+        button {
+            padding: 12px 20px;
+            cursor: pointer;
+            background: #8d8673;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #6f6858;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-tugas">CV</div>
+
+    <div class="content">
+        <h1>Form Kontak</h1>
+        <a href="indeks.html">← Kembali ke Portofolio</a>
+
+        <h3>Hubungi Saya</h3>
+        <form>
+            <div>
+                <label>Nama Lengkap:</label>
+                <input type="text" placeholder="Masukkan nama lengkap">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" placeholder="Masukkan email">
+            </div>
+            <div>
+                <label>Nomor HP:</label>
+                <input type="text" placeholder="Masukkan nomor HP">
+            </div>
+            <div>
+                <label>Subjek:</label>
+                <select>
+                    <option>Kerjasama</option>
+                    <option>Pertanyaan</option>
+                    <option>Feedback</option>
+                </select>
+            </div>
+            <div>
+                <label>Pesan:</label>
+                <textarea rows="4" placeholder="Tulis pesan Anda..."></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"> <span>Saya menyetujui pengiriman data</span>
+            </div>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <p class="footer">&copy; 2026 Hestifari Rintawati Kakunsi</p>
+    </div>
+
+</body>
+</html>
