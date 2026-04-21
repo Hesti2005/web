@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+        "box1 box1 box2"
+        "box1 box1 box3"
+        "box4 box5 box5";
+}
+
+/* Media query pertama */
+@media (max-width: 56cm) {
+    .grid-container {
+        grid-template-areas:
+            "box1 box1"
+            "box1 box1"
+            "box2 box5"
+            "box4 box5";
+    }
+}
+
+/* Media query kedua */
+@media (max-width: 40cm) {
+    .grid-container {
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5";
+    }
+}
+
+.bagian {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Area khusus */
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+.box5 { grid-area: box5; }
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+    <div class="bagian box1">Box 1</div>
+    <div class="bagian box2">Box 2</div>
+    <div class="bagian box3">Box 3</div>
+    <div class="bagian box4">Box 4</div>
+    <div class="bagian box5">Box 5</div>
+</div>
+</body>
+</html>

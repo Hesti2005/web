@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Lengkap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+      grid-gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .box {
+      background: #3498db;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .box h2 {
+      margin-top: 0;
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+    /* Responsif */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* jadi satu kolom di layar kecil */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="grid-container">
+    <div class="box">
+      <h2>Profil</h2>
+      <p><strong>Nama:</strong> Hestifari Rintawati Kakunsi</p>
+      <p><strong>Email:</strong> Kakunsihestifari@gmail.com</p>
+      <p><strong>Telepon:</strong> +62 8123456789</p>
+      <p><strong>Alamat:</strong> Kelurahan Paniki, Kecamatan Siau Barat, Kabupaten Kepulauan Siau, Tagulandang, Biaro</p>
+    </div>
+
+    <div class="box">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah seorang mahasiswa yang memiliki minat besar dalam bidang teknologi informasi, khususnya pengembangan web dan desain antarmuka. Saya senang belajar hal baru, bekerja dalam tim, serta berkomitmen untuk terus berkembang.</p>
+    </div>
+
+    <div class="box">
+      <h2>Riwayat Pendidikan</h2>
+      <p><strong>Politeknik Negeri Manado</strong><br>D-4 Informatika (2024 - Sekarang)</p>
+      <p><strong>SMA Negeri 1 Siau Barat</strong><br>Jurusan IPA (2020 - 2023)</p>
+      <p><strong>SMP Negeri 1 Siau Barat</strong><br>(2017 - 2020)</p>
+      <p><strong>SD Gmist Imanuel Ondong</strong><br>(2011 - 2017)</p>
+    </div>
+
+    <div class="box">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React & Node.js</li>
+        <li>Desain Grafis (Photoshop, Figma)</li>
+        <li>Komunikasi & Kerja Tim</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
